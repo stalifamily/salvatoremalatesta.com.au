@@ -1,0 +1,29 @@
+<article class="relative w-100 dt">
+    <div class="dtc v-top w-100">
+      <div class="tc">
+        <div class="center mb3 mt5">
+
+          {{ if eq .URL "/wife-joanne/"}}
+            <img src="../{{ .Site.Params.imgsrc }}/{{ .Site.Params.jophoto }}.jpg"
+             alt="{{ .Site.Params.jo }} {{ .Site.Params.surname }} characture">
+          {{ else }}
+            <img src="../{{ .Site.Params.imgsrc }}/{{ .Site.Params.salphoto }}.jpg"
+             alt="{{ .Site.Params.sal }} {{ .Site.Params.surname }} characture">
+          {{ end }}
+        </div>
+          <p class="f3">
+            {{ if eq .URL "/wife-joanne/"}}
+              {{ .Site.Params.jo }} {{ .Site.Params.surname }}
+            {{ else }}
+              {{ .Title }}
+          </p>
+        {{ end }}
+
+        {{ with .Params.subtitle }}
+          <div class="dib">
+            <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2 i">{{ . }}</small>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+</article>

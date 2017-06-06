@@ -1,0 +1,14 @@
+
+
+  <!--script src="/app.js"></script-->
+  {{ if eq .URL "/videos/"}}
+    <!-- Plyr -->
+    <!--script src="https://cdn.plyr.io/2.0.13/plyr.js"></script-->
+    <script src="/plyr/plyr.js"></script>
+    <script src="/plyr/demo.js"></script>
+    <script>plyr.setup(document.querySelector('.js-player'), options);</script>
+  {{ end }}
+
+</body>
+
+</html>

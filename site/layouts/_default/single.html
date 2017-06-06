@@ -1,5 +1,28 @@
 {{ partial "head" . }}
-{{ partial "nav" . }}
-{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
-  {{ .Content }}
-{{ partial "footer" . }}
+
+{{ partial "header" . }}
+
+<article class="pv5">
+  <div class="ph3 ph4-m ph5-l">
+    <div class="f5 f3-m lh-copy">
+
+      {{ if .Params.contentOn }}
+        <div class="dt-l w-100 b--black-10 pv4">
+          <div class="dtc-l w-60 center f6 f5-m f4-l measure">
+              {{ .Content }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{ if eq .URL "/photos/"}}{{ partial "gallery" . }}{{ end }}
+      {{ if eq .URL "/videos/"}}{{ partial "gallery-video" . }}{{ end }}
+      {{ if eq .URL "/social/"}}{{ partial "social-links" . }}{{ end }}
+      {{ if eq .URL "/family/"}}{{ partial "family" . }}{{ end }}
+      {{ if eq .URL "/wife-joanne/"}}{{ partial "gallery" . }}{{ end }}
+
+    </div>
+  </div>
+</article>
+
+{{ partial "menu-foot" . }}
+{{ partial "foot" . }}

@@ -1,3 +1,13 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Homepage"
+
+[params]
+  jo = "Joanne"
+  sal = "Salvatore"
+  surname = "Malatesta"
+  imgsrc = "img/stoqe"
+  jophoto = "joanne-malatesta-art"
+  salphoto = "salvatore-malatesta-art"
+
+
