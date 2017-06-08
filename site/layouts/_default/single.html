@@ -8,17 +8,17 @@
 
       {{ if .Params.contentOn }}
         <div class="dt-l w-100 b--black-10 pv4">
-          <div class="dtc-l w-60 center f6 f5-m f4-l measure">
+          <div class="dtc-l w-60-ns center f6 f5-m f4-l measure">
               {{ .Content }}
           </div>
         </div>
       {{ end }}
 
-      {{ if eq .URL "/photos/"}}{{ partial "gallery" . }}{{ end }}
-      {{ if eq .URL "/videos/"}}{{ partial "gallery-video" . }}{{ end }}
+      {{ if eq .URL "/photos/"}}{{ partial "photo-gallery" . }}{{ end }}
+      {{ if eq .URL "/videos/"}}{{ partial "video-gallery" . }}{{ end }}
       {{ if eq .URL "/social/"}}{{ partial "social-links" . }}{{ end }}
       {{ if eq .URL "/family/"}}{{ partial "family" . }}{{ end }}
-      {{ if eq .URL "/wife-joanne/"}}{{ partial "gallery" . }}{{ end }}
+      {{ if eq .URL "/wife-joanne/"}}{{ partial "photo-gallery" . }}{{ end }}
 
     </div>
   </div>

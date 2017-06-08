@@ -1,7 +1,7 @@
 +++
 page = "/videos/"
-title = "Salvatore Malatesta Videos"
 pic = "sal-art"
+title = "Salvatore Malatesta Videos"
 photo1 = ""
 photo2 = ""
 photo3 = ""

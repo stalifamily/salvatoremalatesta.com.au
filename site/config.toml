@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Homepage"
+title = "Salvatore Malatesta"
 
 [params]
   jo = "Joanne"
@@ -9,5 +9,8 @@ title = "Homepage"
   imgsrc = "img/stoqe"
   jophoto = "joanne-malatesta-art"
   salphoto = "salvatore-malatesta-art"
+  author = "STOQE"
+  metaDescription = "The official website of Salvatore Malatesta."
+
 
 

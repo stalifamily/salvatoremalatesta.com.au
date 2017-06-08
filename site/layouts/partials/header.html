@@ -12,12 +12,8 @@
           {{ end }}
         </div>
           <p class="f3">
-            {{ if eq .URL "/wife-joanne/"}}
-              {{ .Site.Params.jo }} {{ .Site.Params.surname }}
-            {{ else }}
-              {{ .Title }}
+            {{ .Title }}
           </p>
-        {{ end }}
 
         {{ with .Params.subtitle }}
           <div class="dib">

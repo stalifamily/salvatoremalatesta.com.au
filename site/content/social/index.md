@@ -2,7 +2,7 @@
 page = "/social/"
 metatitle = "Salvatore Malatesta Photos"
 metadesc = "Photos of Salvatore Malatesta"
-title = "Official Salvatore Malatesta Accounts"
+title = "Official Salvatore Malatesta Social Media"
 subtitle = ""
 bio = ""
 instaname = "salvatore.malatesta"

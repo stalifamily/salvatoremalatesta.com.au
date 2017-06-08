@@ -3,9 +3,20 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-      <title>{{ .Title }}</title>
-      <meta name="author" content="STOQE">
-      <meta name="description" content="Saving Brands.">
+      <title>
+        {{ if .IsHome }}
+          {{ .Site.Params.sal }} {{ .Site.Params.surname }}
+        {{ else if eq .URL "/wife-jo/"}}
+          Wife {{ .Site.Params.jo }}
+        {{ else if eq .URL "/about/"}}
+          About {{ .Site.Params.sal }} {{ .Site.Params.surname }}
+        {{ else }}
+          Salvatore Malatesta {{ .Title }}
+        {{ end }}
+      </title>
+
+      <meta name="author" content="{{ .Site.Params.Author}}">
+      <meta name="description" content="{{ .Site.Params.metaDescription}}">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Open Graph -->
       <meta property="og:type" content="business.business">
@@ -37,7 +48,7 @@
         <!-- Plyr -->
         <!--link rel="stylesheet" href="/plyr/plyr.css"-->
         <link rel="stylesheet" href="https://cdn.plyr.io/2.0.13/plyr.css">
-        <!--link rel="stylesheet" href="/plyr/demo.css"-->
+        <!--link rel="stylesheet" href="../plyr/demo.css"-->
       {{ end }}
 
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700|Merriweather:300,300i%7CMaterial+Icons|Karla:400,400i,700,700i|Lora:700|Poppins:300|Playfair+Display" rel="stylesheet">
@@ -49,5 +60,5 @@
       blockquote {-webkit-margin-end: 0px;}
       </style>
     </head>
-  <body class="{{ with .IsHome }}home {{ end }}{{ with .IsPage }}page {{ end }}brand pv0 ph4 ph6-ns bg-white near-black sans-serif">
+  <body class="{{ with .IsHome }}home {{ end }}{{ with .IsPage }}page {{ end }}js-player brand pv0 ph4 ph6-ns bg-white near-black sans-serif">
   <!--{{ partial "env" . }}-->
