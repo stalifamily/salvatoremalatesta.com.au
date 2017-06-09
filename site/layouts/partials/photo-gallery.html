@@ -1,20 +1,69 @@
 <div class="cf">
   <div class="fl w-100 w-50-l pr2-l pb3">
-    <img class="db w-100" src="../{{ .Site.Params.Imgsrc }}/{{ .Params.photo1 }}.jpg" alt="">
+    <img
+        sizes="(min-width: 30em) 28em, 100vw"
+        srcset="{{ .Site.Params.Imgcdn }},w_256/{{ .Params.photo1 }} 256w,
+                {{ .Site.Params.Imgcdn }},w_512/{{ .Params.photo1 }} 512w,
+                {{ .Site.Params.Imgcdn }},w_768/{{ .Params.photo1 }} 768w,
+                {{ .Site.Params.Imgcdn }},w_1024/{{ .Params.photo1 }} 1024w,
+                {{ .Site.Params.Imgcdn }},w_1280/{{ .Params.photo1 }} 1280w"
+        src="{{ .Site.Params.Imgsrc }},w_512/{{ .Params.photo1 }}"
+        alt />
   </div>
+
   <div class="fl w-100 w-50-l pr1 pr0-l pl2-l pb3">
-    <img class="db w-100" src="../{{ .Site.Params.Imgsrc }}/{{ .Params.photo2 }}.jpg" alt="">
+    <img
+            sizes="(min-width: 30em) 28em, 100vw"
+            srcset="{{ .Site.Params.Imgcdn }},w_256/{{ .Params.photo2 }} 256w,
+                    {{ .Site.Params.Imgcdn }},w_512/{{ .Params.photo2 }} 512w,
+                    {{ .Site.Params.Imgcdn }},w_768/{{ .Params.photo2 }} 768w,
+                    {{ .Site.Params.Imgcdn }},w_1024/{{ .Params.photo2 }} 1024w,
+                    {{ .Site.Params.Imgcdn }},w_1280/{{ .Params.photo2 }} 1280w"
+            src="{{ .Site.Params.Imgsrc }},w_512/{{ .Params.photo2 }}"
+            alt />
   </div>
   <div class="fl w-100 w-50-l pr2-l pb3">
-    <img class="db w-100" src="../{{ .Site.Params.Imgsrc }}/{{ .Params.photo3 }}.jpg" alt="">
+    <img
+            sizes="(min-width: 30em) 28em, 100vw"
+            srcset="{{ .Site.Params.Imgcdn }},w_256/{{ .Params.photo3 }} 256w,
+                    {{ .Site.Params.Imgcdn }},w_512/{{ .Params.photo3 }} 512w,
+                    {{ .Site.Params.Imgcdn }},w_768/{{ .Params.photo3 }} 768w,
+                    {{ .Site.Params.Imgcdn }},w_1024/{{ .Params.photo3 }} 1024w,
+                    {{ .Site.Params.Imgcdn }},w_1280/{{ .Params.photo3 }} 1280w"
+            src="{{ .Site.Params.Imgsrc }},w_512/{{ .Params.photo3 }}"
+            alt />
   </div>
   <div class="fl w-100 w-50-l pr1 pr0-l pl2-l pb3">
-    <img class="db w-100" src="../{{ .Site.Params.Imgsrc }}/{{ .Params.photo4 }}.jpg" alt="">
+    <img
+            sizes="(min-width: 30em) 28em, 100vw"
+            srcset="{{ .Site.Params.Imgcdn }},w_256/{{ .Params.photo4 }} 256w,
+                    {{ .Site.Params.Imgcdn }},w_512/{{ .Params.photo4 }} 512w,
+                    {{ .Site.Params.Imgcdn }},w_768/{{ .Params.photo4 }} 768w,
+                    {{ .Site.Params.Imgcdn }},w_1024/{{ .Params.photo4 }} 1024w,
+                    {{ .Site.Params.Imgcdn }},w_1280/{{ .Params.photo4 }} 1280w"
+            src="{{ .Site.Params.Imgsrc }},w_512/{{ .Params.photo4 }}"
+            alt />
   </div>
   <div class="fl w-100 w-50-l pr2-l pb3">
-    <img class="db w-100" src="../{{ .Site.Params.Imgsrc }}/{{ .Params.photo5 }}.jpg" alt="">
+    <img
+            sizes="(min-width: 30em) 28em, 100vw"
+            srcset="{{ .Site.Params.Imgcdn }},w_256/{{ .Params.photo5 }} 256w,
+                    {{ .Site.Params.Imgcdn }},w_512/{{ .Params.photo5 }} 512w,
+                    {{ .Site.Params.Imgcdn }},w_768/{{ .Params.photo5 }} 768w,
+                    {{ .Site.Params.Imgcdn }},w_1024/{{ .Params.photo5 }} 1024w,
+                    {{ .Site.Params.Imgcdn }},w_1280/{{ .Params.photo5 }} 1280w"
+            src="{{ .Site.Params.Imgsrc }},w_512/{{ .Params.photo5 }}"
+            alt />
   </div>
-  <div class="fl w-100 w-50-l pr1 pr0-l pl2-l pb3">
-    <img class="db w-100" src="../{{ .Site.Params.Imgsrc }}/{{ .Params.photo6 }}.jpg" alt="">
-  </div>
+  <div class="fl w-100 w-50-l pr2-l pb3">
+      <img
+              sizes="(min-width: 30em) 28em, 100vw"
+              srcset="{{ .Site.Params.Imgcdn }},w_256/{{ .Params.photo6 }} 256w,
+                      {{ .Site.Params.Imgcdn }},w_512/{{ .Params.photo6 }} 512w,
+                      {{ .Site.Params.Imgcdn }},w_768/{{ .Params.photo6 }} 768w,
+                      {{ .Site.Params.Imgcdn }},w_1024/{{ .Params.photo6 }} 1024w,
+                      {{ .Site.Params.Imgcdn }},w_1280/{{ .Params.photo6 }} 1280w"
+              src="{{ .Site.Params.Imgsrc }},w_512/{{ .Params.photo6 }}"
+              alt />
+    </div>
 </div>
