@@ -7,7 +7,7 @@
         {{ if .IsHome }}
           {{ .Site.Params.sal }} {{ .Site.Params.surname }}
         {{ else if eq .URL "/wife-joanne/"}}
-          Wife {{ .Site.Params.jo }}
+          {{ .Site.Params.jo }} {{ .Site.Params.surname }}
         {{ else if eq .URL "/about/"}}
           About {{ .Site.Params.sal }} {{ .Site.Params.surname }}
         {{ else }}
