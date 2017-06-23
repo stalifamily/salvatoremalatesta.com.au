@@ -15,4 +15,3 @@ photo4 = "joanne-spain"
 photo5 = "joanne-spain-sensory-lab"
 photo6 = "joanne-spain-st-ali"
 +++
-Joanne's Bio here

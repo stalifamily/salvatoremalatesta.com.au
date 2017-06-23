@@ -6,17 +6,29 @@
       <title>
         {{ if .IsHome }}
           {{ .Site.Params.sal }} {{ .Site.Params.surname }}
-        {{ else if eq .URL "/wife-jo/"}}
+        {{ else if eq .URL "/wife-joanne/"}}
           Wife {{ .Site.Params.jo }}
         {{ else if eq .URL "/about/"}}
           About {{ .Site.Params.sal }} {{ .Site.Params.surname }}
         {{ else }}
-          Salvatore Malatesta {{ .Title }}
+          {{ .Title }}
         {{ end }}
       </title>
 
       <meta name="author" content="{{ .Site.Params.Author}}">
-      <meta name="description" content="{{ .Site.Params.metaDescription}}">
+      <meta name='description' content='
+      {{ if .IsHome }}
+        {{ .Site.Params.metaDescription }}
+      {{ else if eq .URL "/wife-joanne/"}}
+        {{ .Site.Params.metaDescriptionJo }}
+      {{ else if eq .URL "/about/"}}
+        {{ .Site.Params.metaDescriptionAbout }}
+      {{ else if or (eq .URL "/photos/") (eq .URL "/videos/")}}
+        Official {{ .Title }}
+      {{ else }}
+        {{ .Title }}
+      {{ end }}
+      '>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Open Graph -->
       <meta property="og:type" content="business.business">
