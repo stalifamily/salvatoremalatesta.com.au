@@ -25,6 +25,8 @@
         {{ .Site.Params.metaDescriptionAbout }}
       {{ else if or (eq .URL "/photos/") (eq .URL "/videos/")}}
         Official {{ .Title }}
+      {{ else if eq .URL "/social/"}}
+        {{ .Site.Params.metaDescriptionSocial }}
       {{ else }}
         {{ .Title }}
       {{ end }}
